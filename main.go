@@ -9,8 +9,8 @@ import (
 )
 
 const (
-	urlPath = "https://distopia-a1e2.savi2w.workers.dev/"
-	customUserAgent = "arrayy"
+	url = "https://distopia-a1e2.savi2w.workers.dev/"
+	user = "arrayy"
 )
 
 func main() {
@@ -28,13 +28,13 @@ func main() {
 		},
 	}
 
-	request, err := http.NewRequest(http.MethodGet, urlPath, nil)
+	request, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
 		fmt.Println("Error creating request:", err)
 		return
 	}
 
-	request.Header.Set("User-Agent", customUserAgent)
+	request.Header.Set("User-Agent", user)
 
 	response, err := client.Do(request)
 	if err != nil {
