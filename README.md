@@ -1,0 +1,1 @@
+O site https://distopia-a1e2.savi2w.workers.dev/ foi configurado de uma forma específica e desconhecida para evitar acessos não compatíveis com o servidor. O objetivo do código é fazer o site retornar OK (200) utilizando Golang.
